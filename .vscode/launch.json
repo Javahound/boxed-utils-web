@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Prisma Studio",
+        "type": "node-terminal",
+        "request": "launch",
+        "command": "npx prisma studio"
+      },
+      {
+        "name": "Next: debug full stack",
+        "type": "node-terminal",
+        "request": "launch",
+        "command": "npm run dev",
+        "serverReadyAction": {
+          "pattern": "started server on .+, url: (https?://.+)",
+          "uriFormat": "%s",
+          "action": "debugWithChrome"
+        }
+      },
+      {
+        "name": "Backend",
+        "type": "node-terminal",
+        "request": "launch",
+        "command": "npm run dev"
+      }
+    ]
+  }
+  
